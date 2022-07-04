@@ -6,7 +6,7 @@
   </head>
   <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo">
+    <a class="page-header__logo" href="index.html">
       <img class="page-header__logo-image" src="img/logo.svg" width="102" height="84" alt="Логотип «Sedona»">
     </a>
     <nav class="main-nav">
@@ -52,6 +52,7 @@
       <p class="subtitle__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </section>
     <section class="review">
+      <h2 class="visually-hidden">Формы для заполнения</h2>
       <form class="review__form" method="post" action="https://echo.htmlacademy.ru" target="_blank">
         <fieldset class="client">
           <legend class="review__title">Представьтесь:</legend>
@@ -123,7 +124,7 @@
         </fieldset>
         <div>
           <label class="review__title" for="review-comment">Опишите свои эмоции:</label>
-          <textarea id="review-comment" type="textarea" name="comment" rows="4" placeholder="Опишите подробно все свои восторги"></textarea>
+          <textarea id="review-comment" name="comment" rows="4" placeholder="Опишите подробно все свои восторги"></textarea>
         </div>
         <button type="submit">Отправить отзыв</button>
       </form>
