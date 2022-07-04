@@ -23,7 +23,7 @@
               Фото и видео
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--current">
             <a>
               Форма отзыва
             </a>
@@ -53,7 +53,7 @@
     </section>
     <section class="review">
       <form class="review__form" method="post" action="https://echo.htmlacademy.ru" target="_blank">
-        <fieldset>
+        <fieldset class="client">
           <legend class="review__title">Представьтесь:</legend>
             <ul class="client__list">
               <li class="client__item">
@@ -70,14 +70,14 @@
               </li>
             </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="client">
           <legend class="review__title">Контактная информация:</legend>
-            <ul class="contacts__list">
-              <li class="contacts__item">
+            <ul class="client__list">
+              <li class="client__item">
                 <label for="review-phone">Контактный телефон*:</label>
                 <input id="review-phone" type="tel" name="phone" placeholder="Введите телефон">
               </li>
-              <li class="contacts__item">
+              <li class="client__item">
                 <label for="review-email">Электронная почта*:</label>
                 <input id="review-email" type="email" name="email" placeholder="Введите e-mail">
               </li>
@@ -87,15 +87,15 @@
           <legend class="review__title">Ваше общее впечатление:</legend>
           <ul>
             <li class="review__option radio">
-              <input class="visually-hidden review__input" type="radio" name="impression" value="positive" id="impression-positive" checked>
+              <input class="visually-hidden" type="radio" name="impression" value="positive" id="impression-positive" checked>
               <label for="impression-positive">Скорее положительное</label>
             </li>
             <li class="review__option radio">
-              <input class="visually-hidden review__input" type="radio" name="impression" value="negative" id="impression-negative">
+              <input class="visually-hidden" type="radio" name="impression" value="negative" id="impression-negative">
               <label for="impression-negative">Скорее отрицательное</label>
             </li>
             <li class="review__option radio">
-              <input class="visually-hidden review__input" type="radio" name="impression" value="difficult" id="impression-difficult">
+              <input class="visually-hidden" type="radio" name="impression" value="difficult" id="impression-difficult">
               <label for="impression-difficult">Затрудняюсь ответить</label>
             </li>
           </ul>
@@ -121,12 +121,10 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
-          <p>
-          <label for="review-comment">Опишите свои эмоции:</label>
+        <div>
+          <label class="review__title" for="review-comment">Опишите свои эмоции:</label>
           <textarea id="review-comment" type="textarea" name="comment" rows="4" placeholder="Опишите подробно все свои восторги"></textarea>
-          </p>
-        </fieldset>
+        </div>
         <button type="submit">Отправить отзыв</button>
       </form>
     </section>
