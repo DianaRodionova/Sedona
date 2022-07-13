@@ -55,7 +55,7 @@
     <section class="review">
       <h2 class="visually-hidden">Формы для заполнения</h2>
       <form class="review__form" method="post" action="https://echo.htmlacademy.ru" target="_blank">
-        <fieldset class="client">
+        <fieldset class="review__item client">
           <legend class="review__title">Представьтесь:</legend>
             <ul class="client__list">
               <li class="client__item">
@@ -72,7 +72,7 @@
               </li>
             </ul>
         </fieldset>
-        <fieldset class="client">
+        <fieldset class="review__item client">
           <legend class="review__title">Контактная информация:</legend>
             <ul class="client__list">
               <li class="client__item">
@@ -85,39 +85,39 @@
               </li>
             </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="review__item feedback">
           <legend class="review__title">Ваше общее впечатление:</legend>
-          <ul>
-            <li class="review__option radio">
+          <ul class="feedback__list">
+            <li class="feedback__item radio">
               <input class="visually-hidden" type="radio" name="impression" value="positive" id="impression-positive" checked>
               <label for="impression-positive">Скорее положительное</label>
             </li>
-            <li class="review__option radio">
+            <li class="feedback__item radio">
               <input class="visually-hidden" type="radio" name="impression" value="negative" id="impression-negative">
               <label for="impression-negative">Скорее отрицательное</label>
             </li>
-            <li class="review__option radio">
+            <li class="feedback__item radio">
               <input class="visually-hidden" type="radio" name="impression" value="difficult" id="impression-difficult">
               <label for="impression-difficult">Затрудняюсь ответить</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="review__item feedback">
           <legend class="review__title">Посещенные достопримечательности:</legend>
-          <ul>
-            <li class="review__option checkbox">
+          <ul class="feedback__list">
+            <li class="feedback__item checkbox">
               <input class="visually-hidden" type="checkbox" name="bridge" id="attraction-bridge" checked>
               <label for="attraction-bridge">Мост Дьявола</label>
             </li>
-            <li class="review__option checkbox">
+            <li class="feedback__item checkbox">
               <input class="visually-hidden" type="checkbox" name="mountain" id="attraction-mountain" checked>
               <label for="attraction-mountain">Гора-Колокол</label>
             </li>
-            <li class="review__option checkbox">
+            <li class="feedback__item checkbox">
               <input class="visually-hidden" type="checkbox" name="park" id="attraction-park" checked>
               <label for="attraction-park">Слайд-парк</label>
             </li>
-            <li class="review__option checkbox">
+            <li class="feedback__item checkbox">
               <input class="visually-hidden" type="checkbox" name="rock" id="attraction-rock">
               <label for="attraction-rock">Красные скалы</label>
             </li>
