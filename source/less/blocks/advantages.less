@@ -4,6 +4,12 @@
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+  }
 }
 
 .advantages__item {
