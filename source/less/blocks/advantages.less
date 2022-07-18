@@ -24,6 +24,19 @@
   background-color: @color-blue;
   padding-top: 39px;
   padding-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.advantages__text {
+  grid-column: 1 / -1;
+}
+
+.advantages__city {
+  grid-column: 1 / -1;
 }
 
 .advantages__item--pic:first-child {
