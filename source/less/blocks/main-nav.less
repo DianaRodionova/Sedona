@@ -2,42 +2,44 @@
   list-style: none;
   color: @color-white;
   background-color: @color-blue;
-  margin: 0;
   padding: 0;
   text-align: center;
 }
 
-.site-list__link {
+.main-nav__link {
   line-height: 40px;
   color: @color-white;
-
-  @media (min-width: @tablet-width) {
-    color: @color-black;
-  }
 }
 
 @media (min-width: @tablet-width) {
-  .main-nav__toggle {
-    display: none;
+  .main-nav__wrapper {
+    margin: 0 auto;
+    width: @tablet-width;
   }
 
-  .main-nav__wrapper {
-    width: 768px;
-    margin: 0 auto;
+  .main-nav__toggle {
+    display: none;
   }
 
   .main-nav__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 768px;
     color: @color-black;
     background-color: @color-white;
+  }
+
+  .main-nav__item:nth-child(2) {
+    padding-right: 140px;
+  }
+
+  .main-nav__link {
+    color: @color-black;
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-nav__wrapper {
-    width: 1200px;
+    width: @desktop-width;
   }
 }
