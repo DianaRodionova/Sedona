@@ -10,3 +10,16 @@
   margin-top: 28.5px;
   margin-bottom: 33.5px;
 }
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+  }
+
+  .page-footer__text {
+    margin-top: 48.5px;
+    margin-bottom: 45.5px;
+  }
+}

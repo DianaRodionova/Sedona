@@ -6,11 +6,19 @@
   background-position: center;
 
   @media (min-width: @tablet-width) {
+    min-height: 518px;
     background-image: url("../img/grand-canyon-tablet.jpg");
   }
 }
 
-.intro__slogan-image {
+.intro__image {
   display: block;
   margin: auto;
+  padding-top: 90px;
+
+  @media (min-width: @tablet-width) {
+    width: 461px;
+    height: 350px;
+    padding-top: 77px;
+  }
 }
