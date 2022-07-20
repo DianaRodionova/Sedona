@@ -2,6 +2,7 @@
   text-align: center;
   padding-top: 33px;
   padding-bottom: 49px;
+  background-color: @color-white;
 }
 
 .search__title {
@@ -17,4 +18,17 @@
   line-height: 24px;
   margin: 0;
   margin-bottom: 27px;
+}
+
+@media (min-width: @tablet-width) {
+  .search__wrapper {
+    margin: 0 auto;
+    max-width: @tablet-width;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .search__wrapper {
+    max-width: @desktop-width;
+  }
 }

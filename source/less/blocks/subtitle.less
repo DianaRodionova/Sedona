@@ -2,11 +2,7 @@
   text-align: center;
   padding-top: 32px;
   padding-bottom: 11px;
-
-  @media (min-width: @tablet-width) {
-    padding-top: 43.5px;
-    padding-bottom: 52.5px;
-  }
+  background-color: @color-white;
 }
 
 .subtitle__title {
@@ -21,4 +17,22 @@
   line-height: 26px;
   font-weight: 400;
   margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .subtitle {
+    padding-top: 43.5px;
+    padding-bottom: 52.5px;
+  }
+
+  .subtitle__wrapper {
+    margin: 0 auto;
+    max-width: @tablet-width;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .subtitle__wrapper {
+    max-width: @desktop-width;
+  }
 }
