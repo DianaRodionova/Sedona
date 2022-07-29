@@ -14,3 +14,26 @@
   background-color: @color-gray-150;
   text-transform: uppercase;
 }
+
+.page__wrapper {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  min-height: 100%;
+  background-color: @color-white;
+  width: 320px;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px 0 rgba(@color-black, 0.2);
+}
+
+@media (min-width: @tablet-width) {
+  .page__wrapper {
+    width: @tablet-width;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page__wrapper {
+    width: @desktop-width;
+  }
+}
