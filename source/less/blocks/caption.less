@@ -1,0 +1,35 @@
+.caption {
+  min-height: 158px;
+  background-color: @color-gray-150;
+  background-image: url("../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.caption__image {
+  display: block;
+  margin: 0 auto;
+  padding-top: 52px;
+}
+
+@media (min-width: @tablet-width) {
+  .caption {
+    min-height: 290px;
+    max-width: @tablet-width;
+    background-image: url("../img/grand-canyon-desktop.jpg");
+  }
+
+  .caption__image {
+    width: 461px;
+    height: 350px;
+    padding-top: 77px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .caption {
+    min-height: 301px;
+    background-image: url("../img/grand-canyon-desktop.jpg");
+    max-width: @desktop-width;
+  }
+}
