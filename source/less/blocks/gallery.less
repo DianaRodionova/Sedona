@@ -45,3 +45,15 @@
   height: 280px;
   object-fit: contain;
 }
+
+@media (min-width: @tablet-width) {
+  .gallery__list {
+    width: 648px;
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+  }
+
+  .gallery__item:first-child {
+    grid-column: 1 / -1;
+  }
+}
