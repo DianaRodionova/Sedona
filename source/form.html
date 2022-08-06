@@ -69,7 +69,7 @@
               </li>
             </ul>
         </fieldset>
-        <fieldset class="review__item client">
+        <fieldset class="review__item client client--contact">
           <legend class="review__title">Контактная информация:</legend>
             <ul class="client__list">
               <li class="client__item client__item--column">
@@ -82,7 +82,7 @@
               </li>
             </ul>
         </fieldset>
-        <fieldset class="review__item feedback">
+        <fieldset class="review__item feedback feedback--impression">
           <legend class="review__title">Ваше общее впечатление:</legend>
           <ul class="feedback__list">
             <li class="feedback__item radio">
@@ -99,7 +99,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="review__item feedback">
+        <fieldset class="review__item feedback feedback--sight">
           <legend class="review__title">Посещенные достопримечательности:</legend>
           <ul class="feedback__list">
             <li class="feedback__item checkbox">
@@ -120,20 +120,20 @@
             </li>
           </ul>
         </fieldset>
-        <div class="review-comment">
+        <div class="review__item review-comment">
           <label class="review__title" for="review-comment">Опишите свои эмоции:</label>
           <textarea id="review-comment" name="comment" rows="4" placeholder="Опишите подробно все свои восторги"></textarea>
         </div>
         <button class="button button__review" type="submit">Отправить отзыв</button>
+        <p>* — обязательные поля</p>
       </form>
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <p>
-      #visitsedona
-      </p>
-    <div class="page-footer__social">
+    <p class="page-footer__text">
+    #visitsedona
+    </p>
+    <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--twitter" href="#">Twitter</a>
@@ -146,12 +146,11 @@
         </li>
       </ul>
     </div>
-    <div class="page-footer__copyright">
+    <div class="page-footer__copyright copyright">
       <b class="copyright__text">Разработано</b>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
       </a>
-    </div>
     </div>
   </footer>
   </div>
