@@ -6,47 +6,44 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
+  <div class="page__wrapper">
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
+    <a class="page-header__logo">
       <img class="page-header__logo-image" src="img/logo.svg" width="102" height="84" alt="Логотип «Sedona»">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">
               Главная
             </a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">
               Фото и видео
             </a>
           </li>
-          <li class="site-list__item site-list__item--current">
-            <a class="site-list__link">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__item--current">
               Форма отзыва
             </a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/">
               HTML Academy
             </a>
           </li>
         </ul>
-      </div>
     </nav>
   </header>
   <main class="page-main">
 
-    <h1 class="visually-hidden">Обратная связь</h1>
+    <h1 class="visually-hidden">Презентация Седоны</h1>
 
-    <section class="intro">
+    <section class="caption">
       <h2 class="visually-hidden">Добро пожаловать!</h2>
-      <div class="intro__wrapper">
-        <img class="intro__slogan-image" src="img/sedona-form.svg" alt="Надпись Sedona">
-      </div>
+      <img class="caption__image" src="img/text-sedona.svg" width="229" height="39" alt="Надпись Sedona">
     </section>
     <section class="subtitle">
       <h2 class="subtitle__title">Оставьте свой отзыв</h2>
@@ -157,5 +154,6 @@
     </div>
     </div>
   </footer>
+  </div>
   </body>
 </html>
