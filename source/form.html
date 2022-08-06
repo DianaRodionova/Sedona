@@ -56,15 +56,15 @@
           <legend class="review__title">Представьтесь:</legend>
             <ul class="client__list">
               <li class="client__item">
-                <label for="review-name">Имя*</label>
+                <label for="review-name">Имя*:</label>
                 <input id="review-name" type="text" name="name" placeholder="Петр">
               </li>
               <li class="client__item">
-                <label for="review-surname">Фамилия*</label>
+                <label for="review-surname">Фамилия*:</label>
                 <input id="review-surname" type="text" name="surname" placeholder="Иванов">
               </li>
               <li class="client__item">
-                <label for="review-patronymic">Отчество</label>
+                <label for="review-patronymic">Отчество:</label>
                 <input id="review-patronymic" type="text" name="patronymic" placeholder="Александрович">
               </li>
             </ul>
@@ -72,11 +72,11 @@
         <fieldset class="review__item client">
           <legend class="review__title">Контактная информация:</legend>
             <ul class="client__list">
-              <li class="client__item">
+              <li class="client__item client__item--column">
                 <label for="review-phone">Контактный телефон*:</label>
                 <input id="review-phone" type="tel" name="phone" placeholder="Введите телефон">
               </li>
-              <li class="client__item">
+              <li class="client__item client__item--column">
                 <label for="review-email">Электронная почта*:</label>
                 <input id="review-email" type="email" name="email" placeholder="Введите e-mail">
               </li>
@@ -120,11 +120,11 @@
             </li>
           </ul>
         </fieldset>
-        <div>
+        <div class="review-comment">
           <label class="review__title" for="review-comment">Опишите свои эмоции:</label>
           <textarea id="review-comment" name="comment" rows="4" placeholder="Опишите подробно все свои восторги"></textarea>
         </div>
-        <button type="submit">Отправить отзыв</button>
+        <button class="button button__review" type="submit">Отправить отзыв</button>
       </form>
     </section>
   </main>
