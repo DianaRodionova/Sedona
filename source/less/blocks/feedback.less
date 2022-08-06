@@ -25,4 +25,16 @@
     grid-column-start: 1;
     grid-column-end: -1;
   }
+
+  .feedback--sight .feedback__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
+
+@media (min-width: @desktop-width) {
+  .feedback--sight .feedback__list {
+    display: flex;
+  }
+}
+
