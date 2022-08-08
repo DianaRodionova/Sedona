@@ -1,5 +1,38 @@
-.main-nav__toggle {
+.main-nav {
+  position: relative;
+  width: auto;
   min-height: 56px;
+}
+
+.main-nav--opened::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  right: 18px;
+  width: 23px;
+  height: 22px;
+  background-image: url("../img/icon-close.svg");
+}
+
+.main-nav__toggle {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 56px;
+  background-color: @color-white;
+  cursor: pointer;
+  border: none;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  width: 23px;
+  height: 4px;
+  background-color: @color-blue;
+  box-shadow: 0 9px 0 0 @color-blue, 0 18px 0 0 @color-blue;
 }
 
 .main-nav__list {
