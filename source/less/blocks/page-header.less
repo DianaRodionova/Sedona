@@ -5,10 +5,13 @@
 }
 
 .page-header__logo {
-  text-align: center;
-  height: 84px;
   position: absolute;
   z-index: 2;
-  top: 0;
   left: calc(50% - 51px);
+}
+
+@media (max-width: @mobile-width-only) {
+  .page-header__logo {
+    bottom: -34px;
+  }
 }

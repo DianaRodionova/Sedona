@@ -4,45 +4,6 @@
   min-height: 56px;
 }
 
-.main-nav__toggle--cl {
-  content: "";
-  position: absolute;
-  top: 17px;
-  right: 18px;
-  width: 23px;
-  height: 22px;
-}
-
-.main-nav__toggle {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: block;
-  width: 56px;
-  height: 56px;
-  background-color: @color-white;
-  cursor: pointer;
-  border: none;
-  padding: 0;
-}
-
-.main-nav--closed .main-nav__toggle::before {
-  content: "";
-  position: absolute;
-  top: 17px;
-  right: 20px;
-  width: 23px;
-  height: 4px;
-  background-color: @color-blue;
-  box-shadow: 0 9px 0 0 @color-blue, 0 18px 0 0 @color-blue;
-}
-
-@media (max-width: @mobile-width-only) {
-  .main-nav--closed .main-nav__item {
-    display: none;
-  }
-}
-
 .main-nav__list {
   list-style: none;
   color: @color-white;
@@ -60,6 +21,72 @@
 .main-nav__link {
   line-height: 40px;
   color: @color-white;
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav--opened {
+    background: @color-white;
+    padding-bottom: 56px;
+  }
+
+  .main-nav--closed .main-nav__item {
+    display: none;
+  }
+
+  .main-nav--opened .main-nav__item {
+    display: block;
+  }
+
+  .main-nav__toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 56px;
+    height: 56px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+  }
+
+  .main-nav__toggle:hover {
+    opacity: 0.6;
+  }
+
+  .main-nav__toggle:active {
+    opacity: 0.3;
+  }
+
+  .main-nav--closed .main-nav__toggle::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 2px);
+    left: calc(50% - 12px);
+    width: 23px;
+    height: 4px;
+    background-color: @color-blue;
+    box-shadow: 0 -9px 0 0 @color-blue, 0 9px 0 0 @color-blue;
+  }
+
+  .main-nav--opened .main-nav__toggle::before,
+  .main-nav--opened .main-nav__toggle::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 2px);
+    left: calc(50% - 14px);
+    width: 28px;
+    height: 4px;
+    background-color: @color-white;
+  }
+
+  .main-nav--opened .main-nav__toggle::before {
+    transform: rotate(45deg);
+  }
+
+  .main-nav--opened .main-nav__toggle::after {
+    transform: rotate(-45deg);
+  }
 }
 
 @media (min-width: @tablet-width) {
