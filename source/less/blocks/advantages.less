@@ -17,7 +17,7 @@
   color: @color-white;
   background-color: @color-blue;
   padding-top: 39px;
-  padding-bottom: 35px;
+  padding-bottom: 0;
 }
 
 .advantages__item--pic:first-child {
@@ -25,12 +25,26 @@
   padding-bottom: 0;
 }
 
+.advantages__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advantages__text img {
+  width: 320px;
+  height: 260px;
+  object-fit: cover;
+}
+
 .advantages__title {
   font-size: 18px;
   line-height: 26px;
   margin: 0;
+  padding-bottom: 11px;
 }
 
+.advantages__number,
 .advantages__description {
   color: @color-dark;
   font-size: 14px;
@@ -39,8 +53,17 @@
   margin: 0;
 }
 
+.advantages__number--pic,
 .advantages__description--pic {
   color: @color-white;
+}
+
+.advantages__number {
+  padding-bottom: 17px;
+}
+
+.advantages__description--pic {
+  padding-bottom: 39px;
 }
 
 @media (min-width: @tablet-width) {
