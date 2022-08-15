@@ -9,7 +9,6 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 0;
 }
 
@@ -71,5 +70,47 @@
   .city-services__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .city-services__item {
+    padding-left: 0;
+    padding-top: 159px;
+  }
+
+  .city-services__title {
+    font-size: 21px;
+  }
+
+  .city-services__item--house::after {
+    position: absolute;
+    content: "";
+    top: -9px;
+    left: 3px;
+    width: 39px;
+    height: 37px;
+    background-image: url("../img/icon-house.svg");
+    background-repeat: no-repeat;
+  }
+
+  .city-services__item--souvenirs::after {
+    position: absolute;
+    content: "";
+    top: -9px;
+    left: 7px;
+    width: 32px;
+    height: 38px;
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+  }
+
+  .city-services__item--food::after {
+    position: absolute;
+    content: "";
+    top: -9px;
+    left: 0;
+    width: 40px;
+    height: 35px;
+    background-image: url("../img/icon-burger.svg");
+    background-repeat: no-repeat;
   }
 }
