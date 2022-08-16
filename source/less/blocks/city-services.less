@@ -2,7 +2,7 @@
   background-color: @color-white;
   color: @color-black;
   text-align: left;
-  padding: 35px 18px 9px;
+  padding: 35px 40px 9px 18px;
 }
 
 .city-services__list {
@@ -15,6 +15,7 @@
 .city-services__item {
   padding-left: 51px;
   position: relative;
+  padding-bottom: 26px;
 }
 
 .city-services__title {
@@ -30,7 +31,6 @@
   line-height: 21px;
   font-weight: 400;
   margin: 0;
-  padding-bottom: 26px;
 }
 
 .city-services__item--house::after {
@@ -79,16 +79,11 @@
   }
 
   .city-services__item {
-    padding-left: 0;
-    padding-top: 159px;
+    padding: 159px 25px 59px;
   }
 
   .city-services__title {
     font-size: 21px;
-  }
-
-  .city-services__description {
-    padding-bottom: 59px;
   }
 
   .city-services__item--food {
@@ -122,5 +117,11 @@
     width: 76px;
     height: 68px;
     background-size: 76px 68px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .city-services__item {
+    padding: 159px 50px 80px;
   }
 }
