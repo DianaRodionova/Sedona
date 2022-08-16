@@ -18,4 +18,25 @@
   line-height: 24px;
   margin: 0;
   padding-bottom: 27px;
+
+  @media (max-width: @mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .search {
+    padding: 57px 18px 58px;
+  }
+
+  .search__title {
+    font-size: 30px;
+    padding-bottom: 24px;
+  }
+
+  .search__description {
+    padding-bottom: 37px;
+  }
 }

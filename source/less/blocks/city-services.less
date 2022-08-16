@@ -75,6 +75,7 @@
   .city-services__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
   }
 
   .city-services__item {
@@ -90,6 +91,13 @@
     padding-bottom: 59px;
   }
 
+  .city-services__item--food {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
   .city-services__item--house::after {
     position: absolute;
     content: "";
@@ -102,7 +110,7 @@
 
   .city-services__item--souvenirs::after {
     top: 57px;
-    left: calc(50% - 38px);
+    left: calc(50% - 32px);
     width: 64px;
     height: 75px;
     background-size: 64px 75px;
@@ -110,7 +118,7 @@
 
   .city-services__item--food::after {
     top: 63px;
-    left: calc(50% - 32px);
+    left: calc(50% - 38px);
     width: 76px;
     height: 68px;
     background-size: 76px 68px;
