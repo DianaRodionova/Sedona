@@ -1,33 +1,39 @@
 .intro {
   min-height: 389px;
-  background-color: @color-gray-150;
-  background-image: url("../img/back-mobile.jpg");
+  background-color: @color-gray;
+  background-image: url("../img/intro-triangle.svg"), url("../img/grand-canyon-desktop.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .intro__image {
   display: block;
   margin: 0 auto;
   padding-top: 90px;
+  padding-bottom: 84px;
 }
 
 @media (min-width: @tablet-width) {
   .intro {
     min-height: 518px;
-    background-image: url("../img/grand-canyon-desktop.jpg");
   }
 
   .intro__image {
     width: 461px;
     height: 350px;
     padding-top: 77px;
+    padding-bottom: 91px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .intro {
-    background-image: url("../img/grand-canyon-desktop.jpg");
     max-width: @desktop-width;
+  }
+
+  .intro__image {
+    padding-top: 78px;
+    padding-bottom: 90px;
   }
 }
