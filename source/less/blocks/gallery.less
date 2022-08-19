@@ -33,8 +33,19 @@
 }
 
 .gallery__info {
+  position: relative;
   padding-top: 13px;
   padding-left: 37px;
+}
+
+.gallery__info::after {
+  position: absolute;
+  content: "";
+  bottom: 5px;
+  left: 0;
+  background-image: url("../img/like-icon.svg");
+  width: 23px;
+  height: 21px;
 }
 
 .gallery__img {
