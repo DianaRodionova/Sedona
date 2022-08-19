@@ -10,11 +10,25 @@
   text-align: center;
   background-color: @color-gray;
   padding: 25px 35px 24px;
+  position: relative;
 
   @media (max-width: @mobile-width-only) {
     br {
       display: none;
     }
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .advantages__item:not(.advantages__item--pic):not(:last-child)::before {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 1px;
+    background-color: @color-gray-300;
+    bottom: 0;
+    right: 20px;
+    left: 20px;
   }
 }
 
