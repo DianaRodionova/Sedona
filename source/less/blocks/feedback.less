@@ -21,10 +21,10 @@
   content: "";
   position: absolute;
   left: 0;
-  top: -13px;
+  top: -15px;
   width: 48px;
   height: 48px;
-  border: 2px solid @color-gray-100;
+  border: 5px solid @color-gray-100;
   background-color: @color-gray-100;
   border-radius: 50%;
 }
@@ -32,13 +32,36 @@
 .feedback__radio--input + label::after {
   content: "";
   position: absolute;
-  top: 2px;
-  left: 15px;
+  top: 2.5px;
+  left: 17px;
   width: 18px;
   height: 18px;
-  border: 2px solid @color-black;
+  border: 3px solid @color-black;
   background-color: @color-black;
   border-radius: 50%;
+}
+
+.feedback__checkbox--input + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -14px;
+  width: 46px;
+  height: 46px;
+  border: 5px solid @color-gray-100;
+  background-color: @color-gray-100;
+  border-radius: 5%;
+}
+
+.feedback__checkbox--input + label::after {
+  content: "";
+  position: absolute;
+  left: 16px;
+  top: 5px;
+  width: 24px;
+  height: 17px;
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
 }
 
 @media (min-width: @tablet-width) {
