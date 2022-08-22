@@ -18,16 +18,29 @@
 
 .client__item--column {
   flex-direction: column;
+  margin-right: 22px;
 }
 
 .client__item label {
   padding-right: 10px;
+  padding-top: 17px;
 }
 
 .client__item input {
   display: block;
   width: 100%;
-  height: 58px;
+  min-height: 58px;
+  background-color: @color-gray-100;
+  border: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: @color-black;
+  padding-left: 22px;
+}
+
+.client__item input::placeholder {
+  opacity: 1;
 }
 
 .client__item--column label {
@@ -39,6 +52,10 @@
   .client--contact {
     grid-column-start: 1;
     grid-column-end: -1;
+  }
+
+  .client__item--column {
+    margin-right: 0;
   }
 }
 

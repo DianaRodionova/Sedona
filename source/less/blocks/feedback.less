@@ -13,7 +13,32 @@
   line-height: 26px;
   text-transform: none;
   padding-bottom: 43px;
-  padding-left: 98px;
+  padding-left: 78px;
+  position: relative;
+}
+
+.feedback__radio--input + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -13px;
+  width: 48px;
+  height: 48px;
+  border: 2px solid @color-gray-100;
+  background-color: @color-gray-100;
+  border-radius: 50%;
+}
+
+.feedback__radio--input + label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 15px;
+  width: 18px;
+  height: 18px;
+  border: 2px solid @color-black;
+  background-color: @color-black;
+  border-radius: 50%;
 }
 
 @media (min-width: @tablet-width) {
