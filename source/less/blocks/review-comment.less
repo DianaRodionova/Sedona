@@ -1,6 +1,6 @@
 .review-comment {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .review-comment .review__title {
@@ -17,6 +17,8 @@
   font-size: 18px;
   line-height: 26px;
   color: @color-black;
+  resize: none;
+  padding: 13px 22px;
 }
 
 .review-comment textarea::placeholder {
