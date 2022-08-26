@@ -13,7 +13,11 @@
   <div class="page__wrapper">
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="img/logo.svg" width="102" height="84" alt="Логотип «Sedona»">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+        <img class="page-header__logo-image" src="img/logo/logo-mobile.svg" width="102" height="84" alt="Логотип «Sedona»">
+      </picture>
     </a>
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
