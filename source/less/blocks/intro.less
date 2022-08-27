@@ -1,10 +1,14 @@
 .intro {
   min-height: 389px;
   background-color: @color-gray;
-  background-image: url("../img/intro-triangle.svg"), url("../img/grand-canyon-desktop.jpg");
+  background-image: url("../img/intro-triangle.svg"), url("../img/grand-canyon-mobile.jpg");
   background-repeat: no-repeat;
   background-position: bottom, center;
   background-size: 1200px 57px, cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/intro-triangle.svg"), url("../img/grand-canyon-mobile@2x.jpg");
+  }
 }
 
 .intro__image {
@@ -17,6 +21,11 @@
 @media (min-width: @tablet-width) {
   .intro {
     min-height: 518px;
+    background-image: url("../img/intro-triangle.svg"), url("../img/grand-canyon-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro-triangle.svg"), url("../img/grand-canyon-desktop@2x.jpg");
+    }
   }
 
   .intro__image {
