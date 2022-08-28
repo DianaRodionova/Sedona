@@ -61,25 +61,25 @@
       <h2 class="visually-hidden">Каталог фото</h2>
       <ul class="gallery__list">
         <li class="gallery__item">
-          <img class="gallery__img gallery__img--big" src="img/photo-catalog/photo-1.jpg" width="280" height="280" alt="Дорога, горы, машина">
+          <img class="gallery__img gallery__img--big" src="img/photo-catalog/photo-sunset@1x.jpg 1x" srcset="img/photo-catalog/photo-sunset@2x.jpg 2x" alt="Дорога, закат, машина">
           <h3 class="gallery__title">Неродные просторы</h3>
           <p class="gallery__text">Автор фото: Борис</p>
           <p class="gallery__info">1350</p>
         </li>
         <li class="gallery__item">
-          <img class="gallery__img" src="img/photo-catalog/photo-2.jpg" width="280" height="280" alt="Желтый цветок">
+          <img class="gallery__img" src="img/photo-catalog/photo-flower@1x.jpg 1x" srcset="img/photo-catalog/photo-flower@2x.jpg 2x" alt="Желтый цветок">
           <h3 class="gallery__title">Местная растительность</h3>
           <p class="gallery__text">Автор фото: Сергей</p>
           <p class="gallery__info">143</p>
         </li>
         <li class="gallery__item">
-          <img class="gallery__img" src="img/photo-catalog/photo-3.jpg" width="280" height="280" alt="Серпантин и зеленые ели">
+          <img class="gallery__img" src="img/photo-catalog/photo-forest@1x.jpg 1x" srcset="img/photo-catalog/photo-forest@2x.jpg 2x" alt="Серпантин и зеленые ели">
           <h3 class="gallery__title">Дорога на север</h3>
           <p class="gallery__text">Автор фото: Петр</p>
           <p class="gallery__info">96</p>
         </li>
         <li class="gallery__item">
-          <img class="gallery__img" src="img/photo-catalog/photo-4.jpg" width="280" height="280" alt="Коричневый каньон и голубое небо">
+          <img class="gallery__img" src="img/photo-catalog/photo-bridge@1x.jpg 1x" srcset="img/photo-catalog/photo-bridge@2x.jpg 2x" alt="Мост дьявола">
           <h3 class="gallery__title">Мост дьявола</h3>
           <p class="gallery__text">Автор фото: Антон</p>
           <p class="gallery__info">254</p>
@@ -92,7 +92,11 @@
         <p class="subtitle__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
       </div>
       <div class="video__content">
-        <img class="video__img" src="img/photo-catalog/photo-video.jpg" width="320" height="201" alt="Видео о Седоне">
+        <picture class="video__img">
+          <source media="(min-width: 1200px)" srcset="img/photo-catalog/photo-video-desktop@1x.jpg 1x, img/photo-catalog/photo-video-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/photo-catalog/photo-video-tablet@1x.jpg 1x, img/photo-catalog/photo-video-tablet@2x.jpg 2x">
+          <img src="img/photo-catalog/photo-video-mobaile@1x.jpg 1x" srcset="img/photo-catalog/photo-video-mobaile@2x.jpg 2x" alt="Видео о Седоне">
+        </picture>
         <div class="panel">
           <div class="range-controls">
             <div class="scale">
