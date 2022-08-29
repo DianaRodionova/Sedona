@@ -129,7 +129,9 @@
   }
 
   .advantages__text {
-    flex-grow: 1;
+    min-width: 256px;
+    padding-right: 32px;
+    padding-left: 32px;
   }
 
   .advantages__title {
@@ -143,6 +145,14 @@
   .advantage__picture {
     min-width: 512px;
     height: 256px;
+    object-fit: cover;
+    flex-grow: 1;
+  }
+
+  .advantage__image {
+    width: 100%;
+    height: 256px;
+    object-fit: cover;
   }
 
   .advantages__item--pic:first-child {
@@ -161,5 +171,11 @@
 
   .advantages__item--pic {
     padding: 0;
+  }
+
+  .advantages__text {
+    min-width: 400px;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
