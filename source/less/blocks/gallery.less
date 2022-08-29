@@ -11,6 +11,33 @@
   margin: 0;
   padding-top: 21px;
   padding-bottom: 15px;
+  position: relative;
+}
+
+.gallery__item::after {
+  @media (max-width: @mobile-width-only) {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 320px;
+    height: 1px;
+    background-color: @color-gray-300;
+    top: 0;
+    left: -20px;
+  }
+}
+
+.gallery__item:last-child::before {
+  @media (max-width: @mobile-width-only) {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 320px;
+    height: 1px;
+    background-color: @color-gray-300;
+    bottom: 0;
+    left: -20px;
+  }
 }
 
 .gallery__title,

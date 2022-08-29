@@ -97,15 +97,9 @@
           <source media="(min-width: 768px)" srcset="img/photo-catalog/photo-video-tablet@1x.jpg 1x, img/photo-catalog/photo-video-tablet@2x.jpg 2x">
           <img src="img/photo-catalog/photo-video-mobaile@1x.jpg" srcset="img/photo-catalog/photo-video-mobaile@2x.jpg 2x" alt="Видео о Седоне">
         </picture>
-        <div class="panel">
-          <div class="range-controls">
-            <div class="scale">
-              <div class="bar"></div>
-            </div>
-            <div class="toggle"></div>
-          </div>
+        <div class="video__panel panel">
           <ul class="panel__list">
-            <li class="panel__item">
+            <li class="panel__item panel__item--replay">
               <button class="replay" type="button">
                 <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -114,7 +108,13 @@
                 </svg>
               </button>
             </li>
-            <li class="panel__item">
+            <li class="panel__item panel__item--range">
+            <div class="panel__range-controls">
+              <div class="panel__scale"></div>
+              <div class="panel__toggle"></div>
+            </div>
+            </li>
+            <li class="panel__item panel__item--captions">
               <button class="closed-captions" type="button">
                 <svg width="32" height="20" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -123,7 +123,7 @@
                 </svg>
               </button>
             </li>
-            <li class="panel__item">
+            <li class="panel__item panel__item--screen">
               <button class="full-screen" type="button">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 0V3V6H3V3H6V0H3H0Z" fill="#5C6870" />
