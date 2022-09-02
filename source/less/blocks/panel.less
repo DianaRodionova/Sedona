@@ -34,6 +34,18 @@
   padding-left: 24px;
 }
 
+.panel__item--replay:hover .panel__icon-replay,
+.panel__item--captions:hover .panel__icon-captions,
+.panel__item--screen:hover .panel__icon-screen {
+  fill: @color-dark;
+}
+
+.panel__item--replay:active .panel__icon-replay,
+.panel__item--captions:active .panel__icon-captions,
+.panel__item--screen:active .panel__icon-screen {
+  fill: rgba(@color-dark, 0.3);
+}
+
 .panel__item--captions,
 .panel__item--screen {
   text-align: center;
@@ -97,6 +109,18 @@
 
   .panel__item--replay {
     padding-left: 0;
+  }
+
+  .panel__item--replay:hover .panel__icon-replay,
+  .panel__item--captions:hover .panel__icon-captions,
+  .panel__item--screen:hover .panel__icon-screen {
+    fill: rgba(@color-white, 0.6);
+  }
+
+  .panel__item--replay:active .panel__icon-replay,
+  .panel__item--captions:active .panel__icon-captions,
+  .panel__item--screen:active .panel__icon-screen {
+    fill: rgba(@color-white, 0.3);
   }
 
   .panel__range-controls {
