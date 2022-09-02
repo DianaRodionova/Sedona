@@ -7,6 +7,10 @@
   margin: 0;
 }
 
+.social__item {
+  margin-bottom: 6px;
+}
+
 .social__item:not(:last-child) {
   margin-right: 6px;
 }
@@ -31,10 +35,14 @@
   &:active .social__icon {
     opacity: 0.3;
   }
+
+  .social__link--facebook {
+    width: 47px;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .social__list {
-    padding-top: 36px;
+    padding-top: 30px;
   }
 }
