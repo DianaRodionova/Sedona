@@ -19,10 +19,25 @@
 
 .main-nav__link {
   line-height: 40px;
-  color: @color-white;
 }
 
 @media (max-width: @mobile-width-only) {
+  .main-nav__link {
+    color: @color-white;
+
+    &:hover {
+      color: @color-brown-100;
+    }
+
+    &:active {
+      color: @color-brown;
+    }
+
+    &:disabled {
+      color: rgba(@color-black, 0.3);
+    }
+  }
+
   .main-nav--opened {
     background: @color-white;
     padding-bottom: 56px;
@@ -144,6 +159,22 @@
     color: @color-black;
     font-size: 14px;
     line-height: 26px;
+
+    &:hover {
+      color: @color-blue;
+    }
+
+    &:active {
+      color: @color-brown-100;
+    }
+
+    &:disabled {
+      color: rgba(@color-black, 0.3);
+    }
+  }
+
+  .main-nav__item--current {
+    color: @color-brown;
   }
 }
 

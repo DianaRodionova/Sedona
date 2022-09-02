@@ -3,6 +3,20 @@
   color: @color-white;
   background-color: @color-blue;
   padding: 14.5px 48px 17.5px;
+
+  &:hover,
+  &:focus {
+    background-color: @color-blue-200;
+  }
+
+  &:active {
+    color: rgba(@color-white, 0.3);
+    background-color: @color-blue-300;
+  }
+
+  &:disabled {
+    background-color: @color-gray-250;
+  }
 }
 
 .button__review {

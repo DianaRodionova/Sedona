@@ -18,6 +18,19 @@
   background-color: @color-blue;
   width: 46px;
   height: 48px;
+
+  &:hover,
+  &:focus {
+    background-color: @color-blue-200;
+  }
+
+  &:active {
+    background-color: @color-blue-300;
+  }
+
+  &:active .social__icon {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
