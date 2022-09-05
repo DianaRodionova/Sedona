@@ -1,5 +1,6 @@
 .client {
-  padding-top: 19px;
+  padding-top: 20px;
+  padding-bottom: 25px;
 }
 
 .client__list {
@@ -13,12 +14,15 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 26px;
+}
+
+.client__item:not(:last-child) {
   padding-bottom: 20px;
 }
 
 .client__item label {
-  padding-right: 10px;
-  padding-top: 17px;
+  padding-right: 13px;
+  padding-top: 19px;
 }
 
 .client__item--contact {
@@ -35,6 +39,7 @@
   font-size: 18px;
   line-height: 26px;
   color: @color-black;
+  padding: 0;
   padding-left: 22px;
   flex-grow: 1;
 
@@ -48,8 +53,13 @@
 }
 
 .client__item--contact label {
+  padding: 0;
   padding-left: 22px;
   padding-bottom: 8px;
+}
+
+.client__item--contact:not(:last-child) {
+  padding-bottom: 14px;
 }
 
 .client__tel {

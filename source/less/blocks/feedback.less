@@ -1,7 +1,3 @@
-.feedback {
-  padding-top: 36px;
-}
-
 .feedback__list {
   list-style: none;
   padding: 0;
@@ -12,13 +8,17 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: none;
-  margin-bottom: 20px;
+  margin-bottom: 11px;
   padding-left: 78px;
   position: relative;
 }
 
+.feedback legend {
+  margin-bottom: 20px;
+}
+
 .feedback__item:last-child {
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 
 .feedback__radio label {
@@ -33,6 +33,14 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+}
+
+.feedback__checkbox {
+  margin-bottom: 25px;
+}
+
+.feedback__checkbox:last-child {
+  margin-bottom: 24px;
 }
 
 .feedback__radio--input + label::before {
