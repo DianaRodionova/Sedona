@@ -96,7 +96,7 @@
 @media (min-width: @tablet-width) {
   .panel__list {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     width: 648px;
     background-color: rgba(@color-black, 0.6);
   }
@@ -112,7 +112,16 @@
   }
 
   .panel__item--replay {
-    padding-left: 0;
+    padding-left: 35px;
+  }
+
+  .panel__item--captions {
+    padding-left: 42px;
+    padding-right: 0;
+  }
+
+  .panel__item--screen {
+    padding-left: 31px;
   }
 
   .panel__item--replay:hover .panel__icon-replay,
@@ -134,17 +143,18 @@
 
   .panel__item--range {
     background-color: transparent;
+    padding-left: 42px;
   }
 
   .panel__scale {
     top: 45px;
-    left: 0;
+    left: 42px;
     width: 389px;
   }
 
   .panel__toggle {
     top: 40px;
-    left: 111px;
+    left: 153px;
   }
 }
 
