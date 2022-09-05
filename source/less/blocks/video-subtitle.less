@@ -19,6 +19,12 @@
   margin: 0;
 }
 
+@media (max-width: @mobile-width-only) {
+  br {
+    display: none;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .video-subtitle {
     padding-top: 58px;
@@ -33,7 +39,11 @@
 
 @media (min-width: @desktop-width) {
   .video-subtitle {
-    padding-top: 55px;
-    padding-bottom: 41px;
+    padding-top: 61px;
+    padding-bottom: 61px;
+  }
+
+  .video-subtitle__title {
+    margin-bottom: 35px;
   }
 }
