@@ -17,7 +17,7 @@
 }
 
 .client__item:not(:last-child) {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .client__item label {
@@ -59,7 +59,7 @@
 }
 
 .client__item--contact:not(:last-child) {
-  padding-bottom: 14px;
+  margin-bottom: 14px;
 }
 
 .client__tel {
@@ -77,9 +77,25 @@
 }
 
 @media (min-width: @tablet-width) {
+  .client {
+    padding: 0;
+  }
+
   .client--contact {
     grid-column-start: 1;
     grid-column-end: -1;
+  }
+
+  .client--contact legend {
+    margin: 0 auto 20.5px;
+  }
+
+  .client--name {
+    padding-left: 58px;
+  }
+
+  .client--name legend {
+    margin-bottom: 54px;
   }
 }
 
