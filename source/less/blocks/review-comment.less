@@ -3,8 +3,8 @@
   flex-wrap: wrap;
 }
 
-.review-comment .review__title {
-  padding-bottom: 15px;
+.review-comment label {
+  margin-bottom: 15px;
 }
 
 .review-comment textarea {
@@ -29,5 +29,14 @@
   .review-comment {
     grid-column-start: 1;
     grid-column-end: -1;
+  }
+
+  .review-comment label {
+    margin: 19px auto 54px;
+  }
+
+  .review-comment__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
