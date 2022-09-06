@@ -95,7 +95,7 @@
   }
 
   .client--name {
-    padding-left: 58px;
+    margin-left: 58px;
   }
 
   .client--name legend {
@@ -110,5 +110,27 @@
 
   .client__item--contact {
     flex-wrap: nowrap;
+    margin: 0;
+  }
+
+  .client__item--contact:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .client__item--contact label {
+    padding: 0;
+  }
+
+  .client--name {
+    margin-left: 79px;
+  }
+
+  .client--contact legend {
+    margin-bottom: 71px;
+  }
+
+  .client--contact .client__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
