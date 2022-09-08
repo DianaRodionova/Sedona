@@ -107,6 +107,7 @@
   .feedback--sight {
     grid-column-start: 1;
     grid-column-end: -1;
+    position: relative;
   }
 
   .feedback--sight legend {
@@ -130,6 +131,28 @@
 
   .feedback__checkbox:nth-last-child(-n+2) {
     margin-bottom: 0;
+  }
+
+  .feedback--sight::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 123px;
+    height: 1px;
+    background-color: @color-gray-300;
+    top: -70px;
+    left: 0;
+  }
+
+  .feedback--sight::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 123px;
+    height: 1px;
+    background-color: @color-gray-300;
+    top: -70px;
+    right: 0;
   }
 }
 

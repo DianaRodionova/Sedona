@@ -84,6 +84,7 @@
   .client--contact {
     grid-column-start: 1;
     grid-column-end: -1;
+    position: relative;
   }
 
   .client--contact legend {
@@ -96,10 +97,41 @@
 
   .client--name {
     margin-left: 58px;
+    position: relative;
   }
 
   .client--name legend {
     margin-bottom: 54px;
+  }
+
+  .client--name::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 1px;
+    height: 292px;
+    background-color: @color-gray-300;
+    top: -80px;
+    left: -58px;
+  }
+
+  .client--contact::after,
+  .client--contact::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 123px;
+    height: 1px;
+    background-color: @color-gray-300;
+    top: -33px;
+  }
+
+  .client--contact::after {
+    left: 0;
+  }
+
+  .client--contact::before {
+    right: 0;
   }
 }
 
@@ -142,5 +174,10 @@
 
   .client__hidden {
     display: none;
+  }
+
+  .client--contact::after,
+  .client--contact::before {
+    top: -84px;
   }
 }

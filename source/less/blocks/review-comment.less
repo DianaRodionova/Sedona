@@ -29,6 +29,7 @@
   .review-comment {
     grid-column-start: 1;
     grid-column-end: -1;
+    position: relative;
   }
 
   .review-comment label {
@@ -39,10 +40,34 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  .review-comment::after,
+  .review-comment::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 123px;
+    height: 1px;
+    background-color: @color-gray-300;
+    top: 32px;
+  }
+
+  .review-comment::after {
+    left: 0;
+  }
+
+  .review-comment::before {
+    right: 0;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .review-comment label {
     margin-top: 9px;
+  }
+
+  .review-comment::after,
+  .review-comment::before {
+    top: 22px;
   }
 }
