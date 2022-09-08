@@ -36,3 +36,48 @@
 .modal__button-success {
   background-color: @color-gray-100;
 }
+
+@media (max-width: @mobile-width-only) {
+  br {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .modal {
+    min-height: 347px;
+    box-shadow: 0 7px 12px 0 rgba(@color-black, 0.15);
+  }
+
+  .modal__failure {
+    width: 400px;
+  }
+
+  .modal__success {
+    width: 640px;
+  }
+
+  .modal__title,
+  .modal__text {
+    padding: 0 47px;
+  }
+
+  .modal__title {
+    margin-top: 52px;
+    margin-bottom: 34px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .modal__text {
+    margin-bottom: 40px;
+  }
+
+  .modal__success .modal__title {
+    margin-top: 55px;
+  }
+
+  .modal__success .modal__text {
+    margin-bottom: 32px;
+  }
+}
