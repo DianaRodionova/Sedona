@@ -1,6 +1,5 @@
 .review-comment {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
 }
 
@@ -26,6 +25,10 @@
   opacity: 1;
 }
 
+.review-comment__info {
+  margin: 0 auto;
+}
+
 .review-comment__text {
   font-weight: 400;
   font-size: 14px;
@@ -35,7 +38,7 @@
   margin-top: 77px;
 }
 
-@media (max-width: $mobile-width-only) {
+@media (max-width: @mobile-width-only) {
   .review-comment__text {
     display: none;
   }
@@ -53,8 +56,10 @@
   }
 
   .review-comment__info {
+    margin: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: 100%;
   }
 
   .review-comment::after,
