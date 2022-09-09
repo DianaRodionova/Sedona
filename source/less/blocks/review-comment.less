@@ -1,5 +1,6 @@
 .review-comment {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
@@ -23,6 +24,21 @@
 
 .review-comment textarea::placeholder {
   opacity: 1;
+}
+
+.review-comment__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: @color-dark;
+  text-align: right;
+  margin-top: 77px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .review-comment__text {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -62,6 +78,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .review-comment {
+    width: 960px;
+  }
+
   .review-comment label {
     margin-top: 9px;
   }
