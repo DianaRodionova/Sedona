@@ -26,6 +26,7 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+  user-select: none;
 }
 
 .feedback__checkbox label {
@@ -33,6 +34,7 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+  user-select: none;
 }
 
 .feedback__checkbox {
@@ -55,7 +57,7 @@
   border-radius: 50%;
 }
 
-.feedback__radio--input + label::after {
+.feedback__radio--input:checked + label::after {
   content: "";
   position: absolute;
   top: 17.5px;
@@ -79,7 +81,7 @@
   border-radius: 5%;
 }
 
-.feedback__checkbox--input + label::after {
+.feedback__checkbox--input:checked + label::after {
   content: "";
   position: absolute;
   left: 16px;
