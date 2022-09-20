@@ -65,11 +65,11 @@
             <ul class="client__list">
               <li class="client__item">
                 <label for="review-name">Имя*:</label>
-                <input id="review-name" type="text" name="name" placeholder="Петр">
+                <input class="review__name" id="review-name" type="text" name="name" placeholder="Петр">
               </li>
               <li class="client__item">
                 <label for="review-surname">Фамилия*:</label>
-                <input id="review-surname" type="text" name="surname" placeholder="Иванов">
+                <input class="review__surname" id="review-surname" type="text" name="surname" placeholder="Иванов">
               </li>
               <li class="client__item">
                 <label for="review-patronymic">Отчество:</label>
@@ -132,7 +132,7 @@
           <label class="review__title" for="review-comment">Опишите свои эмоции:</label>
           <textarea id="review-comment" name="comment" rows="3" placeholder="Опишите подробно все свои восторги"></textarea>
           <div class="review-comment__info">
-            <button class="button button__review" type="submit">Отправить отзыв</button>
+            <button class="button button__review button-open" type="submit">Отправить отзыв</button>
             <p class="review-comment__text">* — обязательные поля</p>
           </div>
         </div>
@@ -181,17 +181,17 @@
       </a>
     </div>
   </footer>
-  <section class="modal modal__success modal--close">
+  <section class="modal modal__success">
     <h2 class="modal__title">Ваш отзыв отправлен!</h2>
     <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
     <div class="modal__button-success">
-      <button class="button button__success" type="submit">Закрыть окно</button>
+      <button class="button button__success button__success-close" type="submit">Закрыть окно</button>
     </div>
   </section>
-  <section class="modal modal__failure modal--close">
+  <section class="modal modal__failure">
     <h2 class="modal__title">Что-то пошло<br> не так!</h2>
     <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.</p>
-    <button class="button button__failure" type="submit">Ок</button>
+    <button class="button button__failure button__failure-close" type="submit">Ок</button>
   </section>
   </div>
   <script src="js/navigation.js"></script>
