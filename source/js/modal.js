@@ -4,13 +4,18 @@ const openPopupButton = document.querySelector('.button-open');
 const reviewForm = document.querySelector('.review__form');
 const reviewName = reviewForm.querySelector('.review__name');
 const reviewSurname = reviewForm.querySelector('.review__surname');
+const reviewTel = reviewForm.querySelector('.client__tel');
+const reviewEmail = reviewForm.querySelector('.client__email');
 const buttonSuccessClose = successPopup.querySelector('.button__success-close');
-const buttonFailureClose = successPopup.querySelector('.button__failure-close');
+const buttonFailureClose = failurePopup.querySelector('.button__failure-close');
 
 openPopupButton.addEventListener('click', function (evt) {
-  if (!reviewName.value || !reviewSurname.value) {
+  if (!reviewName.value || !reviewSurname.value || !reviewTel.value || !reviewEmail.value) {
     evt.preventDefault();
     failurePopup.classList.add('modal--open');
+  } else {
+    evt.preventDefault();
+    successPopup.classList.add('modal--open');
   }
 }
 );
@@ -29,6 +34,14 @@ buttonFailureClose.addEventListener('click', function (evt) {
 
 document.addEventListener('keydown', function(evt) {
   if (evt.keyCode === 27) {
-    popup.classList.remove('modal--open');
+    evt.preventDefault();
+    successPopup.classList.remove('modal--open');
+  }
+});
+
+document.addEventListener('keydown', function(evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    failurePopup.classList.remove('modal--open');
   }
 });
