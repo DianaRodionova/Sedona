@@ -32,16 +32,10 @@ buttonFailureClose.addEventListener('click', function (evt) {
 }
 );
 
-document.addEventListener('keydown', function(evt) {
+window.addEventListener('keydown', function(evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
     successPopup.classList.remove('modal--open');
-  }
-});
-
-document.addEventListener('keydown', function(evt) {
-  if (evt.keyCode === 27) {
-    evt.preventDefault();
     failurePopup.classList.remove('modal--open');
   }
 });
