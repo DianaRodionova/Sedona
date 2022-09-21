@@ -65,11 +65,11 @@
             <ul class="client__list">
               <li class="client__item">
                 <label for="review-name">Имя*:</label>
-                <input class="review__name" id="review-name" type="text" name="name" placeholder="Петр">
+                <input class="client__name" id="review-name" type="text" name="name" placeholder="Петр" required>
               </li>
               <li class="client__item">
                 <label for="review-surname">Фамилия*:</label>
-                <input class="review__surname" id="review-surname" type="text" name="surname" placeholder="Иванов">
+                <input class="client__surname" id="review-surname" type="text" name="surname" placeholder="Иванов" required>
               </li>
               <li class="client__item">
                 <label for="review-patronymic">Отчество:</label>
@@ -80,13 +80,13 @@
         <fieldset class="review__item client client--contact">
           <legend class="review__title">Контактная информация:</legend>
             <ul class="client__list">
-              <li class="client__item client__item--contact">
+              <li class="client__item client__item--contact error">
                 <label for="review-phone"><div class="client__hidden">Контактный</div> телефон*:</label>
-                <input class="client__tel" id="review-phone" type="tel" name="phone" placeholder="Введите телефон">
+                <input class="client__tel" id="review-phone" type="tel" name="phone" placeholder="Введите телефон" required>
               </li>
               <li class="client__item client__item--contact">
                 <label for="review-email">Электронная&nbsp;почта*:</label>
-                <input class="client__email" id="review-email" type="email" name="email" placeholder="Введите e-mail">
+                <input class="client__email" id="review-email" type="email" name="email" placeholder="Введите e-mail" required>
               </li>
             </ul>
         </fieldset>

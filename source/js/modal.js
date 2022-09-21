@@ -2,15 +2,15 @@ const successPopup = document.querySelector('.modal__success');
 const failurePopup = document.querySelector('.modal__failure');
 const openPopupButton = document.querySelector('.button-open');
 const reviewForm = document.querySelector('.review__form');
-const reviewName = reviewForm.querySelector('.review__name');
-const reviewSurname = reviewForm.querySelector('.review__surname');
-const reviewTel = reviewForm.querySelector('.client__tel');
-const reviewEmail = reviewForm.querySelector('.client__email');
+const clientName = reviewForm.querySelector('.client__name');
+const clientSurname = reviewForm.querySelector('.client__surname');
+const clientTel = reviewForm.querySelector('.client__tel');
+const clientEmail = reviewForm.querySelector('.client__email');
 const buttonSuccessClose = successPopup.querySelector('.button__success-close');
 const buttonFailureClose = failurePopup.querySelector('.button__failure-close');
 
 openPopupButton.addEventListener('click', function (evt) {
-  if (!reviewName.value || !reviewSurname.value || !reviewTel.value || !reviewEmail.value) {
+  if (!clientName.value || !clientSurname.value || !clientTel.value || !clientEmail.value) {
     evt.preventDefault();
     failurePopup.classList.add('modal--open');
   } else {
