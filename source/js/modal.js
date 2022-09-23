@@ -13,6 +13,9 @@ openPopupButton.addEventListener('click', function (evt) {
   if (!clientName.value || !clientSurname.value || !clientTel.value || !clientEmail.value) {
     evt.preventDefault();
     failurePopup.classList.add('modal--open');
+    failurePopup.classList.add('modal--error');
+    failurePopup.offsetWidth = failurePopup.offsetWidth;
+    failurePopup.classList.add('modal--error');
   } else {
     evt.preventDefault();
     successPopup.classList.add('modal--open');
@@ -29,6 +32,7 @@ buttonSuccessClose.addEventListener('click', function (evt) {
 buttonFailureClose.addEventListener('click', function (evt) {
   evt.preventDefault();
   failurePopup.classList.remove('modal--open');
+  failurePopup.classList.remove('modal--error');
 }
 );
 
@@ -37,5 +41,6 @@ window.addEventListener('keydown', function(evt) {
     evt.preventDefault();
     successPopup.classList.remove('modal--open');
     failurePopup.classList.remove('modal--open');
+    failurePopup.classList.remove('modal--error');
   }
 });
