@@ -14,8 +14,6 @@ openPopupButton.addEventListener('click', function (evt) {
     evt.preventDefault();
     failurePopup.classList.add('modal--open');
     failurePopup.classList.add('modal--error');
-    failurePopup.offsetWidth = failurePopup.offsetWidth;
-    failurePopup.classList.add('modal--error');
   } else {
     evt.preventDefault();
     successPopup.classList.add('modal--open');
