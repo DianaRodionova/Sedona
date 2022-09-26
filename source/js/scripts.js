@@ -24,7 +24,7 @@ const clientEmail = reviewForm.querySelector('.client__email');
 const buttonSuccessClose = successPopup.querySelector('.button__success-close');
 const buttonFailureClose = failurePopup.querySelector('.button__failure-close');
 
-openPopupButton.addEventListener('submit', function (evt) {
+openPopupButton.addEventListener('click', function (evt) {
   if (!clientName.value || !clientSurname.value || !clientTel.value || !clientEmail.value) {
     evt.preventDefault();
     failurePopup.classList.add('modal--open');
