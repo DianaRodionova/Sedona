@@ -6,6 +6,13 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const htmlmin = require("gulp-htmlmin");
 const sync = require("browser-sync").create();
+const csso = require("postcss-csso");
+const rename = require("gulp-rename");
+const terser = require("gulp-terser");
+const imagemin = require("gulp-imagemin");
+const webp = require("gulp-webp");
+const svgstore = require("gulp-svgstore");
+const del = require("del");
 
 // Styles
 
@@ -114,6 +121,8 @@ exports.copy = copy;
 const clean = () => {
   return del("build");
 };
+
+exports.clean = clean;
 
 // Server
 
