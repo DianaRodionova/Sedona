@@ -76,10 +76,17 @@
   padding-right: 78px;
 }
 
-.client__name:invalid,
-.client__surname:invalid,
-.client__tel:invalid,
-.client__email:invalid {
+.client__name,
+.client__surname,
+.client__tel,
+.client__email {
+  outline: none;
+}
+
+.client__name:invalid:not(:placeholder-shown),
+.client__surname:invalid:not(:placeholder-shown),
+.client__tel:invalid:not(:placeholder-shown),
+.client__email:invalid:not(:placeholder-shown) {
   border: 2px solid #ff0000;
 }
 
