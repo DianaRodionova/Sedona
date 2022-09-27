@@ -20,7 +20,8 @@
     "gulp-webp": "^4.0.1",
     "postcss": "8.2.8",
     "stylelint": "13.13.1",
-    "stylelint-config-htmlacademy": "0.1.10"
+    "stylelint-config-htmlacademy": "0.1.10",
+    "postcss-csso": "^6.0.1"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -44,8 +45,5 @@
   ],
   "engines": {
     "node": "^12 || ^14"
-  },
-  "dependencies": {
-    "postcss-csso": "^6.0.1"
   }
 }
